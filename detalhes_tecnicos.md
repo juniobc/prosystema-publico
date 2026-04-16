@@ -2,7 +2,7 @@
 
 ## 1. Visão Geral
 
-Plataforma SaaS multi-tenant para gestão da saúde pública municipal, desenvolvida para o CIM/MG (Consórcio Intermunicipal Multifinalitário de Minas Gerais). Cada prefeitura opera em seu próprio schema no banco PostgreSQL, isolado por tenant via header HTTP `X-Tenant-ID`.
+Plataforma SaaS multi-tenant para gestão da saúde pública municipal. Cada prefeitura opera em seu próprio schema no banco PostgreSQL, isolado por tenant via header HTTP `X-Tenant-ID`.
 
 A solução é estruturada como um ecossistema tecnológico único com módulos funcionais integrados, cobrindo desde a atenção primária até a alta complexidade hospitalar, regulação, vigilância e inteligência de dados.
 
