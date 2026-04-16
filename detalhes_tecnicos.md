@@ -17,10 +17,33 @@ A solução é estruturada como um ecossistema tecnológico único com módulos 
 | Banco de Dados | PostgreSQL (multi-schema por município) |
 | Cache | Redis |
 | Autenticação | JWT (OAuth 2.0), middlewares de Auth + Authorization + Tenant |
-| IA / Assistente | Google Gemini, LangGraph, MCP (assistente AIRA) |
+| IA / Assistente | Google Gemini 2.0 Flash, LangGraph, MCP (assistente AIRA) |
+| Automação de Fluxos | n8n (webhooks HTTP, orquestração de agentes) |
 | Containerização | Docker |
 | Certificado Digital | PFX institucional (integração CADSUS, RNDS) |
 | Documentação API | Swagger automático via FastAPI (`/docs`) |
+
+### 2.1. Stack de IA, Machine Learning e Modelos
+
+| Categoria | Tecnologia / Modelo |
+|---|---|
+| LLM Principal | Google Gemini 2.0 Flash (`langchain_google_genai`) |
+| Orquestração de Agentes | LangGraph, LangChain Core, LangChain Community |
+| Protocolo de Ferramentas | Model Context Protocol — MCP (`mcp`, `langchain_mcp_adapters`) |
+| Observabilidade IA | LangSmith (tracing de execuções e debugging) |
+| Séries Temporais | Prophet (Facebook) — previsão de demanda, sazonalidade e feriados |
+| Séries Temporais (alternativo) | SARIMAX (`statsmodels`) — modelos SARIMA para previsão |
+| Clusterização | KMeans (`scikit-learn`) — agrupamento de pacientes por perfil de custo/risco |
+| Classificação | RandomForestClassifier, GradientBoostingClassifier, LogisticRegression (`scikit-learn`) |
+| Detecção de Anomalias | IsolationForest (`scikit-learn`) — identificação de outliers em dados assistenciais |
+| Pré-processamento | StandardScaler, LabelEncoder, PCA, PowerTransformer (`scikit-learn`) |
+| Embeddings Semânticos | Sentence Transformers (`all-MiniLM-L6-v2`) — busca semântica de páginas |
+| Busca Vetorial | FAISS (Facebook AI Similarity Search) — indexação e recuperação vetorial |
+| Deep Learning (framework) | PyTorch (`torch`) — base para modelos Transformers |
+| Transformers | HuggingFace Transformers (`transformers`) — modelos de linguagem e embeddings |
+| LangChain HuggingFace | `langchain_huggingface` — integração LangChain com modelos HuggingFace |
+| Dados e Análise | Pandas, NumPy, Matplotlib, Seaborn |
+| Interoperabilidade FHIR | `fhir.resources`, `fhirpy`, `fhirclient` — modelos oficiais HL7 |
 
 ---
 
