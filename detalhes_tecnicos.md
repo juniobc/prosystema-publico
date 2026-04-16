@@ -17,7 +17,7 @@ A solução é estruturada como um ecossistema tecnológico único com módulos 
 | Banco de Dados | PostgreSQL (multi-schema por município) |
 | Cache | Redis |
 | Autenticação | JWT (OAuth 2.0), middlewares de Auth + Authorization + Tenant |
-| IA / Assistente | Google Gemini 2.0 Flash, LangGraph, MCP (assistente AIRA) |
+| IA / Assistente | Google Gemini, LangGraph, MCP (assistente AIRA) |
 | Automação de Fluxos | n8n (webhooks HTTP, orquestração de agentes) |
 | Containerização | Docker |
 | Certificado Digital | PFX institucional (integração CADSUS, RNDS) |
@@ -27,7 +27,7 @@ A solução é estruturada como um ecossistema tecnológico único com módulos 
 
 | Categoria | Tecnologia / Modelo |
 |---|---|
-| LLM Principal | Google Gemini 2.0 Flash (`langchain_google_genai`) |
+| LLM Principal | Google Gemini (`langchain_google_genai`) |
 | Orquestração de Agentes | LangGraph, LangChain Core, LangChain Community |
 | Protocolo de Ferramentas | Model Context Protocol — MCP (`mcp`, `langchain_mcp_adapters`) |
 | Observabilidade IA | LangSmith (tracing de execuções e debugging) |
@@ -220,7 +220,7 @@ O **AIRA** (Assistente Inteligente para Recursos na Área de Saúde) é o motor 
 
 | Componente | Tecnologia |
 |---|---|
-| LLM Principal | Google Gemini 2.0 Flash |
+| LLM Principal | Google Gemini |
 | Orquestração de Agentes | LangGraph (grafo de estados) |
 | Protocolo de Ferramentas | Model Context Protocol (MCP) |
 | Automação de Fluxos | n8n (webhooks HTTP) |
